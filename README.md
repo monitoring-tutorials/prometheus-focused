@@ -1,6 +1,17 @@
 ## Objetivos
 A ideia desse repositório é manter um estudo de algumas ferramentas de monitoramento e abordar os prinmcipais conceitos que envolve monitoramento e observabilidade, seja para ambiente on-premisses ou focado em [Cloud Native](https://www.cncf.io/). Vou mostrar o uso do Prometheus integrado com outras ferramentas com o Grafana, em ambientes para Kubernetes, infraestrutura local e outros cenários.
 
+## Sumario
+  - [Objetivos](#objetivos)
+  - [Sumario](#sumario)
+  - [Porque monitorar?](#porque-monitorar)
+  - [Monitoramento x Observabilidade](#monitoramento-x-observabilidade)
+  - [Prometheus](#prometheus)
+  - [Glossário](#glossário)
+  - [Arquitetura](#arquitetura)
+  - [Instalação do Prometheus](#instalação-do-prometheus)
+    - [Prometheus no Linux](#prometheus-no-linux)
+
 ## Porque monitorar?
 O monitoramento dentro de tecnologia se refere à iniciativa de obter insights do seu ambiente, seja on-premisses ou cloud native. É o método de ler e entender o que está se passando dentro do contexto da sua infraestrutura/sistema da sua empresa. Existem MUITAS vantagens em manter um monitoramento dos seus ativos de TI, seja servidores, banco de dados, discos, sistemas de backup, aplicações, algumas eu cito abaixo:
 
