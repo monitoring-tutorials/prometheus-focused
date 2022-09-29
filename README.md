@@ -1,20 +1,20 @@
-# Objetivos
+## Objetivos
 A ideia desse repositório é manter um estudo de algumas ferramentas de monitoramento e abordar os prinmcipais conceitos que envolve monitoramento e observabilidade, seja para ambiente on-premisses ou focado em [Cloud Native](https://www.cncf.io/). Vou mostrar o uso do Prometheus integrado com outras ferramentas com o Grafana, em ambientes para Kubernetes, infraestrutura local e outros cenários.
 
-# Sumario
+### Sumario
 - [Objetivos](#objetivos)
-- [Sumario](#sumario)
-- [Porque monitorar?](#porque-monitorar)
-- [Monitoramento x Observabilidade](#monitoramento-x-observabilidade)
+  - [Sumario](#sumario)
+  - [Porque monitorar?](#porque-monitorar)
+  - [Monitoramento x Observabilidade](#monitoramento-x-observabilidade)
   - [Onde estudar?](#onde-estudar)
-  - [Prometheus](#prometheus)
-  - [Glossário](#glossário)
-  - [Arquitetura](#arquitetura)
-  - [Instalação do Prometheus](#instalação-do-prometheus)
-    - [Prometheus no Linux](#prometheus-no-linux)
-    - [Prometheus no Docker](#prometheus-no-docker)
+- [Prometheus](#prometheus)
+- [Glossário](#glossário)
+- [Arquitetura](#arquitetura)
+- [Instalação do Prometheus](#instalação-do-prometheus)
+  - [Prometheus no Linux](#prometheus-no-linux)
+  - [Prometheus no Docker](#prometheus-no-docker)
 
-# Porque monitorar?
+### Porque monitorar?
 O monitoramento dentro de tecnologia se refere à iniciativa de obter insights do seu ambiente, seja on-premisses ou cloud native. É o método de ler e entender o que está se passando dentro do contexto da sua infraestrutura/sistema da sua empresa. Existem MUITAS vantagens em manter um monitoramento dos seus ativos de TI, seja servidores, banco de dados, discos, sistemas de backup, aplicações, algumas eu cito abaixo:
 
 - visibilidade da sua infraestrutura e dos sistemas envolvidos
@@ -25,12 +25,12 @@ O monitoramento dentro de tecnologia se refere à iniciativa de obter insights d
 - uso de ferramentas poderosas suportadas pela comunidade, CNCF, Linux Foundation
 - logs, métricas e ações em tempo real, com mínimos detalhes e porcentagens
 
-# Monitoramento x Observabilidade
+### Monitoramento x Observabilidade
 Aqui existem muitos pontos que é bom destacar, muitas pessoas ainda não tem a ideia da diferença entre as duas abordagens. Vamos começar citando o monitoramento, que é a base da observabilidade. As primeiras ferramentas de monitoramento lá atrás, `Nagios`, `Zabbix` e outras, tinham como foco o monitoramento mais raíz, ou seja, monitorar os principais `recursos de um servidor`, analisar se o `ping está down`, `gerar triggers de uso de disco`, `memória dos servidores`, analisar aquele switch, se  porta n está funcionando bem, se existe `mais portas livres e VLANS disponíveis` para aquele SD e muitos outros cenários. Isso é o monitoramento mais a baixo nível (que não deixa de ser importante, que isso fique claro).
 
 Quando estamos mencionando a observabilidade, o foco muda totalmente. `Medir e garantir` são as palavras mais usadas, medir da forma correta os níveis de serviços e garantir que as aplicações e métricas estejam dentro do esperado, sem delays, atrasos, inconsistências. Aqui dentro do observabilidade, você precisa ir além para medir e observar, você precisa `codar se necessário`, criar um método que cobre todo o cenário de um serviço por exemplo, `integrar com outros sistemas de logs`. Ultimamente tem se usado MUITO a abordagem de `observability as code`, para observar usando código, abordagens baseadas em `IaC`, `GitOps` fazem parte do contexto de observabilidade.
 
-## Onde estudar?
+### Onde estudar?
 Para aquelas pessoas que estejam buscando conhecimentos sobre monitoramento, observabilidade e [Promtheus](https://prometheus.io/). Abaixo eu compartilho algumas fontes que são ótima e podem ajudar demais na sua jornada.
 
 - [GitHub - Descomplicando o Prometheus](https://github.com/badtuxx/DescomplicandoPrometheus).
