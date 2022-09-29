@@ -13,7 +13,9 @@ O monitoramento dentro de tecnologia se refere à iniciativa de obter insights d
 - logs, métricas e ações em tempo real, com mínimos detalhes e porcentagens
 
 ## Monitoramento x Observabilidade
+Aqui existem muitos pontos que é bom destacar, muitas pessoas ainda não tem a ideia da diferença entre as duas abordagens. Vamos começar citando o monitoramento, que é a base da observabilidade. As primeiras ferramentas de monitoramento lá atrás, Nagios, Zabbix e outras, tinham como foco o monitoramento mais raíz, ou seja, monitorar os principais recursos de um servidor, analisar se o `ping está down`, gerar triggers de uso de disco, memória dos servidores, analisar aquele switch, se  porta n está funcionando bem, se existe mais portas livres e VLANS disponíveis para aquele SD e muitos outros cenários. Isso é o monitoramento mais a baixo nível (que não deixa de ser importante, que isso fique claro).
 
+Quando estamos mencionando a observabilidade, o foco muda totalmente.
 
 ## O que é Prometheus
 [Prometheus](https://prometheus.io/) é mais uma de tantas ferramentas existentes no mercado com foco em monitoramento e observabilidade de aplicações, serviços e infraestrutura. Mas ele se difere de MUITAS outras pelo fato de ser bem desenvolvido e receber centenas de milhares de contribuições da comunidade, é um projeto graduado da CNCF.
