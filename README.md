@@ -8,6 +8,14 @@ A ideia desse repositório é manter um estudo de algumas ferramentas de monitor
 ## Prometheus Glossary
 [Aqui](https://prometheus.io/docs/introduction/glossary/) você encontra termos que são usados dentro da arquitetura do Prometheus, ajuda demais no entendimento da ferramenta e seu modo de funcionamento.
 
+## Arquitetura
+Abaixo o exemplo de arquitetura que é usado no Prometheus:
+
+![prometheus](images/prometheus1.png)
+
+## Prometheus em SRE
+ssdsdsd
+
 
 
 
