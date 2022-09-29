@@ -17,10 +17,10 @@ Aqui existem muitos pontos que é bom destacar, muitas pessoas ainda não tem a 
 
 Quando estamos mencionando a observabilidade, o foco muda totalmente.
 
-## O que é Prometheus
+## Prometheus
 [Prometheus](https://prometheus.io/) é mais uma de tantas ferramentas existentes no mercado com foco em monitoramento e observabilidade de aplicações, serviços e infraestrutura. Mas ele se difere de MUITAS outras pelo fato de ser bem desenvolvido e receber centenas de milhares de contribuições da comunidade, é um projeto graduado da CNCF.
 
-## O Glossário do Prometheus 
+## Glossário
 [Aqui](https://prometheus.io/docs/introduction/glossary/) você encontra termos que são usados dentro da arquitetura do Prometheus, ajuda demais no entendimento da ferramenta e seu modo de funcionamento.
 
 ## Arquitetura
@@ -28,8 +28,11 @@ Abaixo o exemplo de arquitetura que é usado no Prometheus e seus componentes, o
 
 ![prometheus](images/prometheus1.png)
 
-## Prometheus em SRE
-ssdsdsd
+## Instalação do Prometheus 
+Iremos abordar aqui algumas formas de instalar o Prometheus em diversos tipos de sistemas, seja diretamente no Linux, Docker, Kubernetes, via Helm e mais.
+
+### Prometheus no Linux
+Para que possamos ter uma ideia de como podemos partir com o Prometheus, vamos começar do zero com Linux, acho uma forma bem legal de demonstrar o seu uso.
 
 
 
