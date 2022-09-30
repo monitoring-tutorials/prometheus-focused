@@ -10,6 +10,8 @@ A ideia desse repositório é manter um estudo de algumas ferramentas de monitor
 - [Prometheus](#prometheus)
 - [Glossário](#glossário)
 - [Arquitetura](#arquitetura)
+  - [Armazenamento](#armazenamento)
+  - [PromQL](#promql)
 - [Instalação do Prometheus](#instalação-do-prometheus)
   - [Prometheus no Linux](#prometheus-no-linux)
   - [Prometheus no Docker](#prometheus-no-docker)
@@ -47,6 +49,18 @@ Para aquelas pessoas que estejam buscando conhecimentos sobre monitoramento, obs
 Abaixo o exemplo de arquitetura que é usado no Prometheus e seus componentes, o desenho ajuda a esclarecer como e onde estão os componentes e com quais controladores eles se conectam.
 
 ![prometheus](images/prometheus1.png)
+
+### Armazenamento
+O Prometheus usa como modelo de armazenamento o TSDB (Time series Database) que possui alguns destaques abaixo:
+- armazenamento de dados que muda conforme o tempo
+- labels para propriedades especificas  de uma determinada métrica (error_type=500)
+- otimização específica para esse caso de uso, garatindo mais performance do que bancos de dados convencionais.
+
+### PromQL
+Prometheus Query Language (SQL do Prometheus).
+- `http_request_total`
+- `rate(http_request_total[5m])`
+- `http_request_total{status!~"4.."}`
 
 ## Instalação do Prometheus 
 Iremos abordar aqui algumas formas de instalar o Prometheus em diversos tipos de sistemas, seja diretamente no Linux, Docker, Kubernetes, via Helm e mais.
