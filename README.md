@@ -35,7 +35,7 @@ Para aquelas pessoas que estejam buscando conhecimentos sobre monitoramento, obs
 
 - [GitHub - Descomplicando o Prometheus](https://github.com/badtuxx/DescomplicandoPrometheus).
 - [Udemy - Monitoramento de Aplicações com Prometheus e Grafana](https://www.udemy.com/course/monitorando-aplicacoes-com-prometheus-e-grafana/).
-- 
+- [Youtube - Introdução ao Prometheus e Grafana: Monitoramento inteligente de aplicações](https://www.youtube.com/watch?v=GPptIhzPBro&ab_channel=FullCycle)
 
 ## Prometheus
 [Prometheus](https://prometheus.io/) é mais uma de tantas ferramentas existentes no mercado com foco em monitoramento e observabilidade de aplicações, serviços e infraestrutura. Mas ele se difere de MUITAS outras pelo fato de ser bem desenvolvido e receber centenas de milhares de contribuições da comunidade, é um projeto graduado da CNCF.
