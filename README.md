@@ -32,6 +32,12 @@ Aqui existem muitos pontos que é bom destacar, muitas pessoas ainda não tem a 
 
 Quando estamos mencionando a observabilidade, o foco muda totalmente. `Medir e garantir` são as palavras mais usadas, medir da forma correta os níveis de serviços e garantir que as aplicações e métricas estejam dentro do esperado, sem delays, atrasos, inconsistências. Aqui dentro do observabilidade, você precisa ir além para medir e observar, você precisa `codar se necessário`, criar um método que cobre todo o cenário de um serviço por exemplo, `integrar com outros sistemas de logs`. Ultimamente tem se usado MUITO a abordagem de `observability as code`, para observar usando código, abordagens baseadas em `IaC`, `GitOps` fazem parte do contexto de observabilidade.
 
+3 pilares da observabilidade que existem formulados:
+
+- Métricas
+- Logs
+- Tracing
+
 ### Onde estudar?
 Para aquelas pessoas que estejam buscando conhecimentos sobre monitoramento, observabilidade e [Promtheus](https://prometheus.io/). Abaixo eu compartilho algumas fontes que são ótima e podem ajudar demais na sua jornada.
 
