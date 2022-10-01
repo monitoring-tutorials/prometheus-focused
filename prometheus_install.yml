@@ -20,5 +20,44 @@
         - git
         - net-tools
 
+    - name: Create the Prometheus directory
+      file:
+        path: /opt/prometheus
+        state: directory
+        mode: '0755'
+
+    - name: Download foo.conf
+      get_url:
+        url: https://github.com/prometheus/prometheus/releases/download/v2.39.0-rc.0/prometheus-2.39.0-rc.0.linux-amd64.tar.gz
+        dest: /opt/prometheus
+        mode: '0440'
+
+    - name: Extract prometheus-tar.gz into /opt/prometheus
+      unarchive:
+        src: /opt/prometheus/prometheus-2.39.0-rc.0.linux-amd64.tar.gz
+        dest: /opt/prometheus
+        remote_src: yes
+
+    - name: Create the service config for prometheus service
+      file:
+        path: /etc/systemd/system/prometheus.service
+        state: touch
+        mode: '0644'
+
+    - name: Add a block into prometheis.service
+      blockinfile: 
+        path: /etc/systemd/system/prometheus.service
+        block: |
+          [Unit]
+          Description=Prometheus Service
+          After=network.target
+
+          [Service]
+          Type=simple
+          ExecStart=/opt/prometheus/prometheus --config.file=/opt/prometheus/prometheus.yml
+
+          [Install]
+          WantedBy=multi-user.target'
+
 
 ...
