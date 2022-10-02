@@ -9,7 +9,6 @@
         name: "*"
         state: latest
 
-
     - name: Install some necessary packages
       yum:
         name: "{{ packages }}"
@@ -58,6 +57,4 @@
 
           [Install]
           WantedBy=multi-user.target'
-
-
 ...
