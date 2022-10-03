@@ -171,7 +171,30 @@ admin
 ```
 
 ### Prometheus no Docker
+Para que seja possível a instalação usando Docker, temos que garantir que o Docker daemon esteja executado.
 
+- Digite e execute o seguinte comando abaixo:
+
+```bash
+# docker container run --name prometheus --rm -d -p 9090:9090 prom/prometheus
+Unable to find image 'prom/prometheus:latest' locally
+latest: Pulling from prom/prometheus
+50783e0dfb64: Pull complete
+daafb1bca260: Pull complete
+6a18f22881e7: Pull complete
+908edf85c90a: Pull complete
+e78c9da65e59: Pull complete
+e8d6aed2bf27: Pull complete
+7e589198f733: Pull complete
+1412cd7e7ed0: Pull complete
+3ccfb34ae500: Pull complete
+ce0dc444d1d9: Pull complete
+3504a6fc290d: Pull complete
+545a2c134fa7: Pull complete
+Digest: sha256:b591915dad4ee2375fbb24cd019c50a546aae561bc63510516efec70d69b4292
+Status: Downloaded newer image for prom/prometheus:latest
+f7c8752170007706a68d5d3ed4dd10d68a9219aeaa01114ea9f9252580a990d0
+```
 
 
 
